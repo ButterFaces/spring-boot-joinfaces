@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://butterfaces.org/components"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view contentType="text/html">
+    <h:head>
+        <title>.:: Choose your Jsf Spring Boot Starter ::.</title>
+        <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+        <link href="#{resource['images/favicon.ico']}" rel="shortcut icon"/>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <h:form>
+                <b:text label="login"
+                        value="#{loginBean.userName}">
+                </b:text>
+                <b:secret label="password"
+                          value="#{loginBean.password}">
+                </b:secret>
+
+                <b:commandLink value="login" action="#{loginBean.login}">
+                    <f:ajax execute="@form" render="@form" />
+                </b:commandLink>
+            </h:form>
+        </div>
+    </h:body>
+</f:view>
+</html>
