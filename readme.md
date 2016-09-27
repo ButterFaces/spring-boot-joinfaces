@@ -1,4 +1,4 @@
-# ButterFaces on Spring Boot with JoinFaces [![Build Status](https://travis-ci.org/ButterFaces/spring-boot-joinfaces.svg?branch=master)](https://travis-ci.org/ButterFaces/spring-boot-joinfaces)
+# ButterFaces on Spring Boot using JoinFaces [![Build Status](https://travis-ci.org/ButterFaces/spring-boot-joinfaces.svg?branch=master)](https://travis-ci.org/ButterFaces/spring-boot-joinfaces)
 
 ## What is ButterFaces?
 
