@@ -1,4 +1,4 @@
-# ButterFaces a smart JSF framework [![Build Status](https://travis-ci.org/ButterFaces/spring-boot-joinfaces.svg?branch=master)](https://travis-ci.org/ButterFaces/spring-boot-joinfaces)
+# ButterFaces on Spring Boot with JoinFaces [![Build Status](https://travis-ci.org/ButterFaces/spring-boot-joinfaces.svg?branch=master)](https://travis-ci.org/ButterFaces/spring-boot-joinfaces)
 
 ## What is ButterFaces?
 
@@ -6,7 +6,7 @@ You want to no more about ButterFaces? Look right [here](http://www.butterfaces.
 
 ## What is this demo about?
 
-This demo shows you to use [ButterFaces](http://www.butterfaces.org/) in a [Spring Boot](http://projects.spring.io/spring-boot/) application using [joinfaces](https://github.com/joinfaces/joinfaces)
+This demo shows you to use [ButterFaces](http://www.butterfaces.org/) in a [Spring Boot](http://projects.spring.io/spring-boot/) application using [JoinFaces](https://github.com/joinfaces/joinfaces)
 
 ## How to use?
 
