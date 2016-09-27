@@ -1,10 +1,14 @@
 package de.larmic.butterfaces.joinfaces.view;
 
+import de.larmic.butterfaces.joinfaces.security.Identity;
 import org.springframework.web.context.annotation.RequestScope;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
+/**
+ * CDI backing bean holding login credentials and delegating to session scoped spring bean.
+ */
 @Named
 @RequestScope
 public class LoginBean {

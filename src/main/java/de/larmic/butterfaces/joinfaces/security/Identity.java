@@ -1,11 +1,14 @@
-package de.larmic.butterfaces.joinfaces.view;
+package de.larmic.butterfaces.joinfaces.security;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
+/**
+ * Session scoped spring bean represents logged in user with user name and logged in flag.
+ */
 @Component
-@Scope(value="session", proxyMode = ScopedProxyMode.TARGET_CLASS)
+@Scope(value = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class Identity {
 
     private String userName;

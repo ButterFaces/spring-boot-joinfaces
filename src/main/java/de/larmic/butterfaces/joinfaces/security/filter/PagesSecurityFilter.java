@@ -1,6 +1,8 @@
-package de.larmic.butterfaces.joinfaces.view.filter;
+package de.larmic.butterfaces.joinfaces.security.filter;
 
-import de.larmic.butterfaces.joinfaces.view.Identity;
+import de.larmic.butterfaces.joinfaces.security.Identity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,10 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Revision: $Revision$
+ * Security filter redirects to login view if {@link Identity} is not logged in and request url references secure area.
  */
 @Component
 public class PagesSecurityFilter implements Filter {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private Identity identity;
@@ -37,7 +41,7 @@ public class PagesSecurityFilter implements Filter {
                 response.sendRedirect(request.getContextPath() + "/login.jsf?faces-redirect=true");
                 return;
             } catch (IllegalStateException e) {
-                // logger
+                log.warn("Could not redirect to {}", request.getContextPath() + "/login.jsf?faces-redirect=true");
             }
         }
 
