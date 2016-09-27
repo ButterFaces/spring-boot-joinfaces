@@ -1,4 +1,4 @@
-# ButterFaces a smart JSF framework [![Build Status](https://travis-ci.org/ButterFaces/ButterFaces.svg?branch=master)](https://travis-ci.org/ButterFaces/ButterFaces)
+# ButterFaces a smart JSF framework [![Build Status](https://travis-ci.org/ButterFaces/spring-boot-joinfaces.svg?branch=master)](https://travis-ci.org/ButterFaces/spring-boot-joinfaces)
 
 ## What is ButterFaces?
 
