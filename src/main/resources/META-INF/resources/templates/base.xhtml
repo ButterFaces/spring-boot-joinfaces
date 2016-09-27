@@ -26,6 +26,28 @@
 <h:body styleClass="body">
 
     <style type="text/css">
+        .header {
+            background-image: linear-gradient(120deg, #155799, #159957);
+            padding: 20px 0 35px 0;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .header small {
+            color: #fff;
+        }
+
+        .socialNetwork {
+            margin-top: 15px;
+        }
+
+        .socialNetwork .googleplus,
+        .socialNetwork .twitter,
+        .socialNetwork .github {
+            float: left;
+            margin-right: 20px;
+        }
+
         .footer .footer-link,
         .footer .versionInformation {
             font-size: smaller;
@@ -71,6 +93,51 @@
     </style>
 
     <f:view>
+
+        <div class="header">
+            <div class="container">
+                <h2>ButterFaces
+                    <small>a smart JSF framework</small>
+                </h2>
+
+                <p>
+                    This demo shows ButterFaces running as a Spring Boot application with a simple login mechanism without using spring security.
+                </p>
+
+                <div class="socialNetwork">
+                    <div class="googleplus">
+                        <!-- Fügen Sie dieses Tag in den head-Abschnitt oder direkt vor dem schließenden body-Tag ein. -->
+                        <script src="https://apis.google.com/js/platform.js"></script>
+
+                        <!-- Fügen Sie dieses Tag an der Stelle ein, an der die Widget erscheinen soll. -->
+                        <div class="g-follow" data-annotation="bubble" data-height="20"
+                             data-href="//plus.google.com/u/0/106961814726878390727" data-rel="publisher"></div>
+                    </div>
+
+                    <div class="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="butterfacesDE"
+                           data-hashtags="ButterFaces">Tweet</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');</script>
+                    </div>
+
+                    <div class="github">
+                        <!-- Place this tag where you want the button to render. -->
+                        <a class="github-button" href="https://github.com/butterfaces/butterfaces" data-icon="octicon-star" data-count-href="/butterfaces/butterfaces/stargazers" data-count-api="/repos/butterfaces/butterfaces#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star butterfaces/butterfaces on GitHub">Star</a>
+                        <!-- Place this tag right after the last button or just before your close body tag. -->
+                        <script id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="content">
             <div class="container">
                 <ui:insert name="content"/>
