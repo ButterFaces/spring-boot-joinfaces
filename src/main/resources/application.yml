@@ -1,5 +1,0 @@
-jsf:
-  PROJECT_STAGE: Production
-
-  butterfaces:
-    version: 2.1.11
