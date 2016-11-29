@@ -43,12 +43,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.joinfaces</groupId>
-            <artifactId>jsf-spring-boot-starter</artifactId>
+            <artifactId>jsf-butterfaces-spring-boot-starter</artifactId>
             <version>${jsf-spring-boot-starter.version}</version>
             <exclusions>
                 <exclusion>
@@ -59,13 +55,6 @@
                     <groupId>org.primefaces</groupId>
                     <artifactId>primefaces</artifactId>
                 </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.joinfaces</groupId>
-            <artifactId>jsf-butterfaces-spring-boot-starter</artifactId>
-            <version>${jsf-spring-boot-starter.version}</version>
-            <exclusions>
                 <exclusion>
                     <groupId>net.bootsfaces</groupId>
                     <artifactId>bootsfaces</artifactId>
