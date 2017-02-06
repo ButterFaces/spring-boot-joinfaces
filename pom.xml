@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.3.RELEASE</version>
+        <version>1.5.1.RELEASE</version>
     </parent>
 
     <name>spring-boot-joinfaces</name>
@@ -22,7 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jsf-spring-boot-starter.version>2.3.4</jsf-spring-boot-starter.version>
+        <jsf-spring-boot-starter.version>2.3.6</jsf-spring-boot-starter.version>
     </properties>
 
     <developers>
