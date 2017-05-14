@@ -22,7 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jsf-spring-boot-starter.version>2.3.8</jsf-spring-boot-starter.version>
+        <jsf-spring-boot-starter.version>2.3.9</jsf-spring-boot-starter.version>
     </properties>
 
     <developers>
