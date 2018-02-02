@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>2.0.0.RC1</version>
     </parent>
 
     <name>spring-boot-joinfaces</name>
@@ -22,7 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jsf-spring-boot-starter.version>2.4.1</jsf-spring-boot-starter.version>
+        <joinfaces.version>3.0.0.RC1</joinfaces.version>
     </properties>
 
     <developers>
@@ -44,22 +44,8 @@
     <dependencies>
         <dependency>
             <groupId>org.joinfaces</groupId>
-            <artifactId>jsf-butterfaces-spring-boot-starter</artifactId>
-            <version>${jsf-spring-boot-starter.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.primefaces.extensions</groupId>
-                    <artifactId>primefaces-extensions</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.primefaces</groupId>
-                    <artifactId>primefaces</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>net.bootsfaces</groupId>
-                    <artifactId>bootsfaces</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>butterfaces-spring-boot-starter</artifactId>
+            <version>${joinfaces.version}</version>
         </dependency>
         <!-- testing -->
         <dependency>
