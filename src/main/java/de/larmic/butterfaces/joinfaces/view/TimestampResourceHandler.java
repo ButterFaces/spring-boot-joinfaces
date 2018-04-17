@@ -1,6 +1,6 @@
 package de.larmic.butterfaces.joinfaces.view;
 
-import de.larmic.butterfaces.handler.ButterFacesResource;
+import org.butterfaces.handler.ButterFacesResource;
 import javax.faces.application.Resource;
 import javax.faces.application.ResourceHandler;
 import javax.faces.application.ResourceHandlerWrapper;
