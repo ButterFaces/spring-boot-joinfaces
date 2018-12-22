@@ -31,3 +31,5 @@ mvn clean install
 ```Shell
 java -jar target/joinfaces-0.0.1-SNAPSHOT.jar
 ```
+
+and open `http://localhost:8080/login.jsf` in your browser. 
